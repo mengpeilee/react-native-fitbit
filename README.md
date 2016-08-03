@@ -59,7 +59,7 @@ alt="Add Path" width="681" height="447" border="50" />
       <img src="http://i.imgur.com/mYuGCF7.png" 
 alt="URL Scheme" width="602" height="195" border="50" />
 
-3. Goto <a href="https://dev.fitbit.com/" title="Title">Fitbit dev</a>and create an app
+3. Goto <a href="https://dev.fitbit.com/" title="Title">Fitbit dev</a> and create an app
    - In the **Callback Domain** field, it has to be the domain of the server or app for redirection after authentication.
    
    <img src="http://i.imgur.com/wX3JJ9e.png" 
