@@ -124,6 +124,7 @@ Ready to write codes into `index.ios.js`.
   Linking.openURL(oauthurl).catch(err => console.error('Error processing linking', err));
 }
 
+//get your API data
 function getAPIData(access_token) {
   fetch(
      'Your API Resource URL',
