@@ -149,8 +149,9 @@ function getAPIData(access_token) {
     }
     ```
     
- <img src="http://i.imgur.com/oxM7lUu.png" 
-alt="URL Scheme" width="369" height="660" border="50" />
 
 #Note
 Thanks <a href="https://github.com/pyliaorachel/yahoo" title="Title">pyliaorachel</a> teach me! Really thank you!
+
+ <img src="http://i.imgur.com/oxM7lUu.png" 
+alt="URL Scheme" width="369" height="660" border="50" />
