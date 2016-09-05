@@ -54,9 +54,9 @@ function OAuth(client_id, cb) {
   Linking.openURL(oauthurl).catch(err => console.error('Error processing linking', err));
 }
 
-function getProfileData(access_token) {
+function getData(access_token) {
   fetch(
-     'https://api.fitbit.com/1/user/-/profile.json',
+     'https://api.fitbit.com/1/user/userid/activities/heart/date/today/1d.json',
     {
       method: 'GET',
       headers: {
@@ -76,7 +76,7 @@ class OauthExample extends Component {
 
 
   componentDidMount() {
-    OAuth(config.client_id, getProfileData);
+    OAuth(config.client_id, getData);
   }
 
 
