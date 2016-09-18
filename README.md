@@ -125,17 +125,21 @@ Ready to write codes into `index.ios.js`.
 }
 
 //get your API data
-function getAPIData(access_token) {
+function getData(access_token) {
   fetch(
-     'Your API Resource URL',
+     'https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json',
     {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${ access_token}`
+        'Authorization': `Bearer ${access_token}`
       },
+      //body: `root=auto&path=${Math.random()}`
+
     }
   ).then((res) => {
-    console.log('res: ', res);
+    return res.json()
+  }).then((res) => {
+    console.log(`res: ${JSON.stringify(res)}`);
   }).catch((err) => {
     console.error('Error: ', err);
   });
