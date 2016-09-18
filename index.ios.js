@@ -56,17 +56,19 @@ function OAuth(client_id, cb) {
 
 function getData(access_token) {
   fetch(
-     'https://api.fitbit.com/1/user/userid/activities/heart/date/today/1d.json',
+     'https://api.fitbit.com/1/user/-/activities/heart/date/today/1d.json',
     {
       method: 'GET',
       headers: {
-        'Authorization': `Bearer ${ access_token}`
+        'Authorization': `Bearer ${access_token}`
       },
       //body: `root=auto&path=${Math.random()}`
 
     }
   ).then((res) => {
-    console.log('res: ', res);
+    return res.json()
+  }).then((res) => {
+    console.log(`res: ${JSON.stringify(res)}`);
   }).catch((err) => {
     console.error('Error: ', err);
   });
