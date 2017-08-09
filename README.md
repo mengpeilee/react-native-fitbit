@@ -14,20 +14,20 @@ react-native init OauthExample
 npm install qs --save
 ```
 
-#Step 2
+# Step 2
 Set up your environment:
 
-1. Open `ios/your_project_name.xcodeproj` file to do the following configuration:
+  1. Open `ios/your_project_name.xcodeproj` file to do the following configuration:
 
-  1. Link the Linking library in the project
+  2. Link the Linking library in the project
   
     - Click on your project. Go to `Build Settings > Search Paths > Header Search Paths` and add a path to the Linking library.
     - Here I choose to add `$(SRCROOT)/../node_modules/react-native/Libraries` and select `recursive`.
+     
+     <img src="http://i.imgur.com/h0mHw5z.png" alt="URL Scheme" width="680" height="447" border="50" />
 
-     <img src="http://i.imgur.com/h0mHw5z.png" 
-alt="Add Path" width="681" height="447" border="50" />
 
-  2. Open `AppDelegate.m` and add the following code after `@implementation AppDelegate`:
+  3. Open `AppDelegate.m` and add the following code after `@implementation AppDelegate`:
   
     ```
     - (BOOL)application:(UIApplication *)application
@@ -50,7 +50,7 @@ alt="Add Path" width="681" height="447" border="50" />
     - More information on [Linking](https://facebook.github.io/react-native/docs/linking.html).
 
 
-2. Register your app with a custom URL
+  4. Register your app with a custom URL
 
     - Click on your project. Go to `Info > URL Types` and add a custom **Identifier** and **URL Scheme** for your app.
       + Creating a custom **URL scheme** makes your app directable through typing `yoururlscheme://` in the address bar of a browser.
@@ -59,7 +59,7 @@ alt="Add Path" width="681" height="447" border="50" />
       <img src="http://i.imgur.com/mYuGCF7.png" 
 alt="URL Scheme" width="602" height="195" border="50" />
 
-3. Goto <a href="https://dev.fitbit.com/" title="Title">Fitbit dev</a> and create an app
+  5. Goto <a href="https://dev.fitbit.com/" title="Title">Fitbit dev</a> and create an app
    - In the **Callback Domain** field, it has to be the domain of the server or app for redirection after authentication.
    
    <img src="http://i.imgur.com/wX3JJ9e.png" 
@@ -155,7 +155,7 @@ function getData(access_token) {
     ```
     
 
-#Note
+# Note
 Thanks <a href="https://github.com/pyliaorachel" title="Title">pyliaorachel</a> for teaching me! Really thank you!
 
  <img src="http://i.imgur.com/oxM7lUu.png" 
