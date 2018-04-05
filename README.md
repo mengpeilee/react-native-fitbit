@@ -24,8 +24,8 @@ Set up your environment:
     - Click on your project. Go to `Build Settings > Search Paths > Header Search Paths` and add a path to the Linking library.
     - Here I choose to add `$(SRCROOT)/../node_modules/react-native/Libraries` and select `recursive`.
      
-     <img src="http://i.imgur.com/h0mHw5z.png" alt="URL Scheme" width="680" height="447" border="50" />
-
+      <img src="http://i.imgur.com/h0mHw5z.png" 
+alt="URL Scheme" width="680" height="447" border="50" />
 
   3. Open `AppDelegate.m` and add the following code after `@implementation AppDelegate`:
   
