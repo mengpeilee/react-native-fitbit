@@ -2,7 +2,7 @@
 
 We will create an app and link to OAuth2 of <a href="https://dev.fitbit.com/docs/" title="Title">Fitbit API</a> which is focusing on iOS.
 
-In Android, you can ignore Step 2(but you still need to do Step 2.5), and you have to set your Android APP url scheme. About how to set url scheme, can be find <a href="https://stackoverflow.com/questions/36244507/how-to-set-a-url-scheme-link-for-a-react-native-app" title="Title">here</a>.
+In Android, you can ignore Step 2(but you still need to do Step 2.5), and you have to set your Android APP url scheme. About how to set url scheme, it can be find <a href="https://stackoverflow.com/questions/36244507/how-to-set-a-url-scheme-link-for-a-react-native-app" title="Title">here</a>.
 
 Thanks to <a href="https://github.com/pyliaorachel/yahoo-oauth2-react-native/tree/tutorial" title="Title">this tutorial </a> for great instructions on using Yahoo API. Many of the project are based on this article.
 
