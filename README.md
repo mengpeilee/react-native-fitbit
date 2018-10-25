@@ -26,8 +26,7 @@ Set up your environment:
     - Click on your project. Go to `Build Settings > Search Paths > Header Search Paths` and add a path to the Linking library.
     - Here I choose to add `$(SRCROOT)/../node_modules/react-native/Libraries` and select `recursive`.
      
-      <img src="http://i.imgur.com/h0mHw5z.png" 
-alt="URL Scheme" width="680" height="447" border="50" />
+   <img src="http://i.imgur.com/h0mHw5z.png" alt="URL Scheme" width="680" height="447" border="50" />
 
   3. Open `AppDelegate.m` and add the following code after `@implementation AppDelegate`:
   
@@ -58,8 +57,7 @@ alt="URL Scheme" width="680" height="447" border="50" />
       + Creating a custom **URL scheme** makes your app directable through typing `yoururlscheme://` in the address bar of a browser.
       + **Identifier** makes different apps with the same URL scheme differentiable.
       
-      <img src="http://i.imgur.com/mYuGCF7.png" 
-alt="URL Scheme" width="602" height="195" border="50" />
+  <img src="http://i.imgur.com/mYuGCF7.png" alt="URL Scheme" width="602" height="195" border="50" />
 
   5. Goto <a href="https://dev.fitbit.com/" title="Title">Fitbit dev</a> and create an app
    - In the **Callback Domain** field, it has to be the domain of the server or app for redirection after authentication.
